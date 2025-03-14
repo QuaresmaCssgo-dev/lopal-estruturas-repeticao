@@ -11,7 +11,6 @@
         let escolha = prompt("Bem-vindo a o jogo da adivinhação! digite 1 caso queira começa o jogo, digite 2 caso nao queira.")
         
         if(escolha == 1){
-
         let numeroPensado = Math.floor(Math.random()*10 + 1);
 
        for(tentativa = 1; tentativa <= 3; tentativa++){
@@ -20,15 +19,13 @@
             if (chute == numeroPensado){
                 alert("Parabéns você acertou! ");
                 break;
-                
+
             }else{
                 alert("Você errou! você tem mais "+ (3 - tentativa) + " tentativas.");
                         if(tentativa == 3 ){
                          document.write("Eu tinha pensado " + numeroPensado);
                           } else if (escolha == 2){
                             alert("Você escolheu fechar o jogo... Ate a proxima")
-                          }else{
-                            alert("Número invalido. tente novamente");
                           }
                   } 
                }  
